@@ -2,11 +2,11 @@ import React from 'react';
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
-import Banner from '../Banner/Banner';
-import BannerImg from '../BannerImg/BannerImg';
+
+
 const Navbar = () => {
     return (
-        <div className=''>
+        <div className='bg-[#9538E2]'>
             {/* navbar */}
             <div className="navbar  w-[1280px] mx-auto ">
   <div className="navbar-start">
@@ -50,9 +50,7 @@ const Navbar = () => {
     <p className=' p-2 bg-white rounded-full'><FaRegHeart></FaRegHeart></p>
   </div>
              </div>
-             <div>
-                <Banner></Banner>
-             </div>
+             
         </div>
         
     );
