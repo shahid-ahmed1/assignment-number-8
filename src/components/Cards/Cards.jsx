@@ -7,7 +7,6 @@ const Cards = () => {
     const {category}=useParams();
     
     const [data ,setData] =useState([])
-    console.log(data)
 useEffect(()=>{
     if(category){
         const filterdByCategory = [...alldata].filter(data=>data.category===category);

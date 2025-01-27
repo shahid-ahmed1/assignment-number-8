@@ -7,7 +7,7 @@
       "category": "Laptops",
       "price": 1350,
       "description": "Business laptop with top-notch performance.",
-      "Specification": ["16GB RAM", "1TB SSD", "Intel i7"],
+      "specification": ["16GB RAM", "1TB SSD", "Intel i7"],
       "availability": true,
       "rating": 4.6
     },
@@ -18,7 +18,7 @@
       "category": "Laptops",
       "price": 2500,
       "description": "Powerful laptop for professionals.",
-      "Specification": ["32GB RAM", "1TB SSD", "M2 Pro Chip"],
+      "specification": ["32GB RAM", "1TB SSD", "M2 Pro Chip"],
       "availability": true,
       "rating": 4.9
     },
@@ -29,7 +29,7 @@
       "category": "Laptops",
       "price": 1800,
       "description": "Gaming laptop with exceptional graphics.",
-      "Specification": ["16GB RAM", "1TB SSD", "AMD Ryzen 9"],
+      "specification": ["16GB RAM", "1TB SSD", "AMD Ryzen 9"],
       "availability": true,
       "rating": 4.8
     },
@@ -40,7 +40,7 @@
       "category": "Laptops",
       "price": 700,
       "description": "Lightweight and affordable ultrabook.",
-      "Specification": ["8GB RAM", "512GB SSD", "Intel i5"],
+      "specification": ["8GB RAM", "512GB SSD", "Intel i5"],
       "availability": true,
       "rating": 4.5
     },
@@ -51,7 +51,7 @@
       "category": "Laptops",
       "price": 2200,
       "description": "High-end laptop for content creators.",
-      "Specification": ["32GB RAM", "1TB SSD", "Intel i9"],
+      "specification": ["32GB RAM", "1TB SSD", "Intel i9"],
       "availability": true,
       "rating": 4.9
     },
@@ -62,7 +62,7 @@
       "category": "Laptops",
       "price": 1600,
       "description": "Premium laptop with a touchscreen display.",
-      "Specification": ["16GB RAM", "512GB SSD", "Intel i7"],
+      "specification": ["16GB RAM", "512GB SSD", "Intel i7"],
       "availability": true,
       "rating": 4.7
     }

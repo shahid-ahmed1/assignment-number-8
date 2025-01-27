@@ -14,6 +14,7 @@ import Roots from './components/Roots/Roots.jsx';
 import Error from './components/Error/Error.jsx';
 import Card from './components/Card/Card.jsx';
 import Cards from './components/Cards/Cards.jsx';
+import CardDitails from './components/CardDitails/CardDitails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,6 +51,13 @@ const router = createBrowserRouter([
       path:'/about-us',
       element:<AboutUs></AboutUs>
     },
+    ,
+        {
+          path:'/detail/:detailId',
+          element:<CardDitails></CardDitails>,
+          loader:()=>fetch('../allData.json')
+          
+        }
      
     
   ]
