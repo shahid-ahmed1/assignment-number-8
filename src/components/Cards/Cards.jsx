@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Card from '../Card/Card';
+import CardDitails from '../CardDitails/CardDitails';
 
 const Cards = () => {
     const alldata = useLoaderData();

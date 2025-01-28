@@ -2,13 +2,16 @@ import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
+import { addToStoredCartData, getStoredCartData } from '../../utilitis';
 const CardDitails = () => {
  const {detailId} = useParams();
 const data = useLoaderData();
 const items = data.find(item=>item.product_id==detailId);
-const {product_id,product_title,product_image,category,price,description,specification,availability,rating}=items;
+const {product_id,product_title,product_image,category,price,description,specification,availability,rating}= items  ;
  
- 
+    const handleAddToCard=(id)=>{
+addToStoredCartData(id)
+    }
     return (
         <div>
                     <div className='text-center bg-[#9538E2] p-10 pb-44'>
@@ -28,10 +31,10 @@ const {product_id,product_title,product_image,category,price,description,specifi
     <p className='text-2xl'>Price:{price}</p>
     <p>{description}</p>
     <button className="btn bg-white w-24 rounded-lg">In Stock</button>
-    <p className='list-decimal '>   
+    {/* <p className='list-decimal '>   
     <p className='text-2xl mr-4 font-bold '>Specification:</p>
     {specification.map((spn)=><li>{spn}</li>)}
-    </p>
+    </p> */}
     <p className='text-xl font-bold'>Rating</p>
     <div className='flex items-center gap-3'>
     <div className="rating ">
@@ -49,7 +52,7 @@ const {product_id,product_title,product_image,category,price,description,specifi
 
     <div className="card-actions ">
 <Link>
-<button className="btn bg-[#9538E2] rounded-2xl text-white">Add To Card <IoCartOutline className='text-2xl text-white'></IoCartOutline></button></Link>
+<button onClick={()=>handleAddToCard(detailId)} className="btn const bg-[#9538E2] rounded-2xl text-white">Add To Card <IoCartOutline className='text-2xl text-white'></IoCartOutline></button></Link>
 <Link>
 <p className=' p-2   text-2xl  ml-4 rounded-full'><FaRegHeart></FaRegHeart></p>
 
@@ -67,6 +70,6 @@ const {product_id,product_title,product_image,category,price,description,specifi
 </div>
         </div>
     );
-};
+}
 
 export default CardDitails;

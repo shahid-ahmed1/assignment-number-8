@@ -28,7 +28,7 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       <NavLink className={({isActive})=>  ` text-white (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')`} to={'/'}>Home</NavLink>
+       <NavLink className={({isActive})=>  ` text-white (isActive?'text-orange-500 text-lg:hover:bg-orange-500 text-lg ')`} to={'/'}>Home</NavLink>
         <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/statistics'>Statistics</NavLink>
         <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/dashboard'>Dashboard</NavLink>
         <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/about-us'>About Us</NavLink>

@@ -15,11 +15,12 @@ import Error from './components/Error/Error.jsx';
 import Card from './components/Card/Card.jsx';
 import Cards from './components/Cards/Cards.jsx';
 import CardDitails from './components/CardDitails/CardDitails.jsx';
+import AddToCart from './components/AddToCart/AddToCart.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
-    errorElement:<Error></Error>,
+    // errorElement:<Error></Error>,
     children:[
       {
       path:'/',
@@ -45,7 +46,15 @@ const router = createBrowserRouter([
     },
       {
       path:'/dashboard',
-      element:<Dashboard></Dashboard>
+      element:<Dashboard></Dashboard>,
+      children:[
+        {
+              path:'addtocart',
+              element:<AddToCart></AddToCart>,
+              loader:()=>fetch('../allData.json')
+        },
+        
+       ]
     },
       {
       path:'/about-us',
@@ -55,9 +64,11 @@ const router = createBrowserRouter([
         {
           path:'/detail/:detailId',
           element:<CardDitails></CardDitails>,
-          loader:()=>fetch('../allData.json')
+          loader:()=>fetch('../allData.json'),
           
-        }
+        },
+         
+        
      
     
   ]
