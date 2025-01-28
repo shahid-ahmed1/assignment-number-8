@@ -2,7 +2,9 @@ import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
-import { addToStoredCartData, getStoredCartData } from '../../utilitis';
+import { addToStoredCartData, addToStoredWishData, getStoredCartData } from '../../utilitis';
+import AddToWish from '../AddToWish/AddToWish';
+import { toast } from 'react-toastify';
 const CardDitails = () => {
  const {detailId} = useParams();
 const data = useLoaderData();
@@ -11,6 +13,12 @@ const {product_id,product_title,product_image,category,price,description,specifi
  
     const handleAddToCard=(id)=>{
 addToStoredCartData(id)
+
+    }
+    const handleWishToCard =(id)=>{
+        addToStoredWishData(id)
+       
+        
     }
     return (
         <div>
@@ -54,7 +62,7 @@ addToStoredCartData(id)
 <Link>
 <button onClick={()=>handleAddToCard(detailId)} className="btn const bg-[#9538E2] rounded-2xl text-white">Add To Card <IoCartOutline className='text-2xl text-white'></IoCartOutline></button></Link>
 <Link>
-<p className=' p-2   text-2xl  ml-4 rounded-full'><FaRegHeart></FaRegHeart></p>
+<p onClick={()=>handleWishToCard(detailId)} className=' p-2   text-2xl  ml-4 rounded-full'><FaRegHeart></FaRegHeart></p>
 
 </Link>
 </div>
@@ -65,9 +73,6 @@ addToStoredCartData(id)
 
 </div>
 
-<div>
-
-</div>
         </div>
     );
 }

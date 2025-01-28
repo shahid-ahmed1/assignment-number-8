@@ -16,6 +16,9 @@ import Card from './components/Card/Card.jsx';
 import Cards from './components/Cards/Cards.jsx';
 import CardDitails from './components/CardDitails/CardDitails.jsx';
 import AddToCart from './components/AddToCart/AddToCart.jsx';
+import AddToWish from './components/AddToWish/AddToWish.jsx';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,12 +56,18 @@ const router = createBrowserRouter([
               element:<AddToCart></AddToCart>,
               loader:()=>fetch('../allData.json')
         },
+        {
+              path:'addtowish',
+              element:<AddToWish></AddToWish>,
+              loader:()=>fetch('../allData.json')
+        },
         
        ]
     },
       {
       path:'/about-us',
-      element:<AboutUs></AboutUs>
+      element:<AboutUs></AboutUs>,
+      loader:()=>fetch('../allData.json')
     },
     ,
         {
@@ -79,5 +88,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>,
 )

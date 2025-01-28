@@ -5,9 +5,9 @@ const Card = ({item}) => {
   const {product_id,product_title,product_image,category,price,description,Specification,availability,rating}=item;
     return (
         <div className=''>
-       <div className="card bg-base-500 p-4 shadow-sm">
+       <div className="card  bg-base-500 p-4 shadow-sm">
   <figure>
-    <img className='rounded-xl'
+    <img className='rounded-xl '
       src={product_image}
       alt="Product-img" />
   </figure>

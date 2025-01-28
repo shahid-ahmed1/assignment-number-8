@@ -1,9 +1,13 @@
 import React from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const AboutUs = () => {
+   const data = useLoaderData()
     return (
         <div>
-            about heare
+            {
+                data.map(item => <div key={item.price}>{item.price}</div>)
+            }
         </div>
     );
 };

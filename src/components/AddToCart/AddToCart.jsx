@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { getStoredCartData } from '../../utilitis';
 import Card from '../Card/Card';
 import CardDitails from '../CardDitails/CardDitails';
+import AddToCardDet from '../AddT0CrdDet/AddToCardDet';
 
 const AddToCart = () => {
 
@@ -25,9 +26,9 @@ const AddToCart = () => {
                     <button className='btn text-white rounded-2xl bg-[#9538E2] ml-3'>Purchase</button>
                 </div>
             </div>
-            <div>
+            <div className='mt-10 gap-5'>
 
-            {datas.map(item=> <Card key={item.product_id} item={item}></Card>)}
+            {datas.map(item=> <AddToCardDet key={item.product_id} item={item}></AddToCardDet>)}
             </div>
         </div>
     );
