@@ -7,7 +7,7 @@ const Card = ({item}) => {
         <div className=''>
        <div className="card  bg-base-500 p-4 shadow-sm">
   <figure>
-    <img className='rounded-xl '
+    <img className='rounded-xl w-72 h-52 '
       src={product_image}
       alt="Product-img" />
   </figure>

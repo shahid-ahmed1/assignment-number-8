@@ -1,8 +1,9 @@
 import React from 'react';
 import { TiDelete } from "react-icons/ti";
 import { NavLink } from 'react-router-dom';
-const AddToCardDet = ({item}) => {
-    const {product_id,product_title,product_image,category,price,description,specification,availability,rating}= item
+const AddToCardDet = ({item,handleRemoveData}) => {
+    const {product_id,product_title,product_image,category,price,description,specification,availability,rating}= item;
+   
     return (
         <div className=' mt-10'>
             <div>
@@ -18,7 +19,7 @@ const AddToCardDet = ({item}) => {
     <p className='text-xl font-bold mt-2'>Price $:{price}</p>
     <div className="card-actions  justify-end">
   <NavLink>
-  <button   className="cursor-pointer"><TiDelete size={30}></TiDelete></button>
+  <button onClick={()=>handleRemoveData(product_id)}  className="cursor-pointer"><TiDelete size={30}></TiDelete></button>
   </NavLink>
     </div>
   </div>

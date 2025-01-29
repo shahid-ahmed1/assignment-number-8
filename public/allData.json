@@ -3,7 +3,7 @@
     {
       "product_id": 3,
       "product_title": "Lenovo ThinkPad X1 Carbon",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/dJ1bFsJP/pexels-fotios-photos-811587.jpg",
       "category": "Laptops",
       "price": 1350,
       "description": "Business laptop with top-notch performance.",
@@ -14,7 +14,7 @@
     {
       "product_id": 4,
       "product_title": "Apple MacBook Pro 16",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/93bLb6fh/dell-Gi3i-UJ1-Fwx-I-unsplash.jpg",
       "category": "Laptops",
       "price": 2500,
       "description": "Powerful laptop for professionals.",
@@ -25,7 +25,7 @@
     {
       "product_id": 5,
       "product_title": "Asus ROG Zephyrus G14",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpgg",
+      "product_image": "https://i.ibb.co.com/dJKVB7ZB/james-mckinven-tpu-Ao8g-Vs58-unsplash.jpg",
       "category": "Laptops",
       "price": 1800,
       "description": "Gaming laptop with exceptional graphics.",
@@ -36,7 +36,7 @@
     {
       "product_id": 6,
       "product_title": "Acer Swift 3",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/dwnS2KBf/dell-8pb7-Hq539-Zw-unsplash.jpg",
       "category": "Laptops",
       "price": 700,
       "description": "Lightweight and affordable ultrabook.",
@@ -47,7 +47,7 @@
     {
       "product_id": 7,
       "product_title": "MSI Creator Z16",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/KzxzGqQW/michal-kubalczyk-Wecngm-AT-KY-unsplash.jpg",
       "category": "Laptops",
       "price": 2200,
       "description": "High-end laptop for content creators.",
@@ -58,7 +58,7 @@
     {
       "product_id": 8,
       "product_title": "Microsoft Surface Laptop 5",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/MxH4n8zv/bram-naus-N1g-UD-d-Cv-JE-unsplash.jpg",
       "category": "Laptops",
       "price": 1600,
       "description": "Premium laptop with a touchscreen display.",
@@ -71,7 +71,7 @@
     {
       "product_id": 9,
       "product_title": "iPhone 14 Pro Max",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/rGZxvk8Q/oscar-nord-8l9-Vx-XI28t-Y-unsplash.jpg",
       "category": "Phones",
       "price": 1299,
       "description": "The latest iPhone with A16 Bionic chip, 48MP camera, and Dynamic Island.",
@@ -82,7 +82,7 @@
     {
       "product_id": 10,
       "product_title": "MacBook Pro 16-inch",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/9HvMSBwp/crystal-collis-w4xdt5o9-Fs4-unsplash.jpg",
       "category": "MacBook",
       "price": 2499,
       "description": "The ultimate pro notebook with M2 Max chip and Liquid Retina XDR display.",
@@ -93,7 +93,7 @@
     {
       "product_id": 12,
       "product_title": "iPhone 13 Mini",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/HLTPJ29w/kenny-eliason-z3k-BG5x-Ihjo-unsplash.jpg",
       "category": "Phones",
       "price": 699,
       "description": "Compact iPhone with A15 Bionic chip and dual-camera system.",
@@ -104,7 +104,7 @@
     {
       "product_id":13,
       "product_title": "MacBook Air M2",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/TM4RrKw2/altumcode-2l4zty-IYouk-unsplash.jpg",
       "category": "MacBook",
       "price": 1199,
       "description": "Lightweight, powerful, and efficient with the M2 chip.",
@@ -115,7 +115,7 @@
     {
       "product_id":14,
       "product_title": "Apple Watch SE",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/HpxKPjPR/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
       "category": "Smart Watches",
       "price": 249,
       "description": "Affordable Apple Watch with essential features for daily use.",
@@ -128,7 +128,7 @@
    {
       "product_id": 17,
       "product_title": "Apple Watch Ultra",
-      "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+      "product_image": "https://i.ibb.co.com/VWYbJdYW/mateo-abrahan-v-Vmfi-yh-Csc-unsplash.jpg",
       "category": "Smart Watches",
       "price": 799,
       "description": "Designed for extreme activities with rugged build and advanced features.",
@@ -141,7 +141,7 @@
        {
             "product_id": 19,
             "product_title": "MagSafe Charger",
-            "product_image": "https://i.ibb.co.com/pbxVbyg/daniel-canibano-JE3-ASpu-Eld4-unsplash.jpg",
+            "product_image": "https://i.ibb.co.com/KchKrr4g/charger-usb-cable-type-c-red-background.jpg",
             "category": "Accessories",
             "price": 39,
             "description": "Fast and efficient wireless charging for your iPhone and AirPods.",
