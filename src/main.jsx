@@ -19,6 +19,7 @@ import AddToCart from './components/AddToCart/AddToCart.jsx';
 import AddToWish from './components/AddToWish/AddToWish.jsx';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BarChart } from 'recharts';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,7 +46,8 @@ const router = createBrowserRouter([
     },
       {
       path:'/statistics',
-      element:<Statistics></Statistics>
+      element:<Statistics></Statistics>,
+      loader:()=>fetch('../allData.json')
     },
       {
       path:'/dashboard',
@@ -89,5 +91,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
     <ToastContainer />
+    <BarChart></BarChart>
   </StrictMode>,
 )

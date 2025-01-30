@@ -1,12 +1,14 @@
 import React from 'react';
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const location = useLocation();
+const homePath = location.pathname ==='/';
     return (
-        <div className='bg-[#9538E2]'>
+        <div className={homePath?'bg-[#9538E2]':'bg-white '}>
             {/* navbar */}
             <div className="navbar  w-[1280px] mx-auto ">
   <div className="navbar-start">
@@ -28,21 +30,24 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       <NavLink className={({isActive})=>  ` text-white (isActive?'text-orange-500 text-lg:hover:bg-orange-500 text-lg ')`} to={'/'}>Home</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/statistics'>Statistics</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/dashboard'>Dashboard</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/about-us'>About Us</NavLink>
+          <div role="tablist" className="tabs tabs-border">
+       <NavLink className={({isActive})=>`tab text-2xl font-bold ${isActive ?'tab-active':''}` } role="tab" to={'/'}>Home</NavLink>
+        <NavLink role="tab" className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/statistics'>Statistics</NavLink>
+        <NavLink role="tab" className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/dashboard'>Dashboard</NavLink>
+        <NavLink className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/about-us'>About Us</NavLink>
+        </div>
       </ul>
     </div>
-    <a className=" text-xl font-bold text-white">Gadget Heaven</a>
+    <a className={homePath?'text-white text-2xl font-bold':'text-black text-2xl font-bold'}>Gadget Heaven</a>
   </div>
-  <div className="navbar-center hidden lg:flex ">
-    <ul className="menu menu-horizontal px-1 flex gap-5">
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to={'/'}>Home</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/statistics'>Statistics</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/dashboard'>Dashboard</NavLink>
-        <NavLink className={({isActive})=> (isActive?'text-orange-500 text-lg ':'hover:bg-orange-500 text-lg ')} to='/about-us'>About Us</NavLink>
-      
+  <div className="navbar-center hidden lg:flex items-center">
+    <ul className={homePath?'text-white menu menu-horizontal px-1':' menu menu-horizontal px-1 text-black '}>
+    
+       <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline':'text-lg  '} ${location.pathname === "/" ? " text-white" : "text-black"}` }  to={'/'}>Home</NavLink>
+        <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline ml-4':'text-lg ml-4 '} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/statistics'>Statistics</NavLink>
+        <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline ml-4':'text-lg ml-4 '} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/dashboard'>Dashboard</NavLink>
+        <NavLink className={({isActive})=>`  ${isActive ?'tab-active  text-lg underline ml-4':'text-lg  ml-4'} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/about-us'>About Us</NavLink>
+        
     </ul>
   </div>
   <div className="navbar-end">

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import { getStoredCartData, removeToCart } from '../../utilitis';
 import Card from '../Card/Card';
 import CardDitails from '../CardDitails/CardDitails';
 import AddToCardDet from '../AddT0CrdDet/AddToCardDet';
 
 const AddToCart = () => {
+    const navigate= useNavigate()
     const allData = useLoaderData();
     const [datas ,setDatas]=useState([]);
     const [sortedByPr , setSortedByPr] =useState('')
@@ -16,7 +17,7 @@ const AddToCart = () => {
      setDatas(addToData);
      },[getStoredCartData,allData]);
     
-       
+    
     
      const handleRemoveData=(id)=>{ 
         removeToCart(id)
@@ -25,7 +26,7 @@ const AddToCart = () => {
       
             setSortedByPr(price);
             if(price =='price'){
-             const sorted = [...datas].sort((a,b)=>b.price-a-price);
+             const sorted = [...allData].sort((a,b)=>a.price-b.price);
              setDatas(sorted)
             }
         }
@@ -34,10 +35,14 @@ const AddToCart = () => {
             <div className='flex justify-between items-center'>
                 <h1 className='text-2xl font-bold'>Cart</h1>
                 <div>
-                    <button onClick={()=>handleSrotByPrice('price')} className='btn text-white rounded-2xl bg-[#9538E2]'>Sort by Price</button>
-                    <button className='btn text-white rounded-2xl bg-[#9538E2] ml-3'>Purchase</button>
+                    <button onClick={()=>handleSrotByPrice('price')} className='btn text-white bg-[#9538E2] rounded-2xl '>Sort by Price</button>
+                    <button onClick={()=>navigate('/')}   className='btn text-white rounded-2xl bg-[#9538E2] ml-3'>Purchase</button>
+
+                    
                 </div>
+                
             </div>
+            
             <div className='mt-10 gap-5'>
 
             {datas.map(item=> <AddToCardDet  handleRemoveData={handleRemoveData} key={item.product_id} item={item}></AddToCardDet>)}
