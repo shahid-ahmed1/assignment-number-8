@@ -1,6 +1,6 @@
 # Gadget Heaven
 
- Live Link : (https://app.netlify.com/sites/reacta8/overview)
+ Live Link : ([https://app.netlify.com/sites/reacta8/overview](https://reacta8.netlify.app/))
  GitHub link : (https://github.com/shahid-ahmed1/assignment-number-8) 
 
  React Fundamental concepts used in the project :
