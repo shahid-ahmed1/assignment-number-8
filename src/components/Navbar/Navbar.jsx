@@ -34,7 +34,7 @@ const homePath = location.pathname ==='/';
        <NavLink className={({isActive})=>`tab text-2xl font-bold ${isActive ?'tab-active':''}` } role="tab" to={'/'}>Home</NavLink>
         <NavLink role="tab" className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/statistics'>Statistics</NavLink>
         <NavLink role="tab" className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/dashboard'>Dashboard</NavLink>
-        <NavLink className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/about-us'>About Us</NavLink>
+        <NavLink className={({isActive})=> (isActive?' text-lg ':' text-lg ')} to='/about-us'>Sign Up</NavLink>
         </div>
       </ul>
     </div>
@@ -46,7 +46,7 @@ const homePath = location.pathname ==='/';
        <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline':'text-lg  '} ${location.pathname === "/" ? " text-white" : "text-black"}` }  to={'/'}>Home</NavLink>
         <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline ml-4':'text-lg ml-4 '} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/statistics'>Statistics</NavLink>
         <NavLink role="tab" className={({isActive})=>` ${isActive ?'tab-active  text-lg underline ml-4':'text-lg ml-4 '} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/dashboard'>Dashboard</NavLink>
-        <NavLink className={({isActive})=>`  ${isActive ?'tab-active  text-lg underline ml-4':'text-lg  ml-4'} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/about-us'>About Us</NavLink>
+        <NavLink className={({isActive})=>`  ${isActive ?'tab-active  text-lg underline ml-4':'text-lg  ml-4'} ${location.pathname === "/" ? " text-white" : "text-black"}` } to='/about-us'>Sign Up</NavLink>
         
     </ul>
   </div>
