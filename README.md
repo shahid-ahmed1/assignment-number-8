@@ -29,11 +29,17 @@
  I have used LocalStorage for handling and managing data in this project .
 
  Here are 5 key features of the project:
+ 
   1 Shopping Cart System.
+  
   2 Wishlist System 
+  
   3 Product Filtering
+  
   4 Details Page
+  
   5 Statistics Page
+  
  
  
 
