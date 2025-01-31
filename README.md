@@ -1,8 +1,27 @@
-# GadgetHeaven
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Live Link : (https://app.netlify.com/sites/reacta8/overview)
+ GitHub link : (https://github.com/shahid-ahmed1/assignment-number-8) 
 
-Currently, two official plugins are available:
+ React Fundamental concepts used in the project :
+ 1 JSX
+ 2 Components 
+ 3 Props 
+ 4 State Management 
+ 5 Event Handling 
+ 6 useEffect Hook 
+ 7 React Router 
+ 8 Context API 
+ 9 Custom Hooks 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ I have used LocalStorage for handling and managing data in this project .
+
+ Here are 5 key features of the project:
+  1 Shopping Cart System.
+  2 Wishlist System 
+  3 Product Filtering
+  4 Details Page
+  5 Statistics Page
+ 
+ 
+
